@@ -10,7 +10,7 @@
         (function () {
             window.onpageshow = function(event) {
                 if (event.persisted) {
-                    document.querySelectorAll('.zooming').forEach(z => z.classList.remove('zooming'));
+                    document.querySelectorAll('.zooming').forEach(z => z.remove());
                     // fixes safari caching zoomed-in state of element
                 }
             };
