@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.zooming').forEach(z => z.classList.remove('zooming'));
     let house = document.querySelector('.house')
     house.addEventListener('click', function(e) {
         e.preventDefault();
