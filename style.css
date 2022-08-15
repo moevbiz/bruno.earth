@@ -25,6 +25,7 @@ body {
     justify-content: center;
     font-family: 'Courier New', Courier, monospace;
     margin-top: .8em;
+    text-align: center;
 }
 
 .link_wrapper a {
