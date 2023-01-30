@@ -8,12 +8,11 @@ body {
 
 .earth {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     margin-top: .8em;
     margin-bottom: .6em;
-    text-align: center;
-    font-size: 2em;
+    text-align: left;
 }
 
 .earth::after {
@@ -27,14 +26,12 @@ body {
 
 .link_wrapper {
     display: flex;
-    justify-content: center;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: .8em;
-    text-align: center;
+    text-align: left;
 }
 
 .link_wrapper a {
-    font-size: min(6vw, 2rem);
+    /* font-size: min(6vw, 2rem); */
 }
 
 a {
