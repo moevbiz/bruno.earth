@@ -1,4 +1,6 @@
-let links = document.querySelectorAll('.link_wrapper');
-links.forEach((l, i) => {
-    l.parentNode.appendChild(links[Math.random() * i | 0]);
+document.addEventListener('DOMContentLoaded', () => {
+    const headings = document.querySelectorAll('h2');
+    headings.forEach(h => {
+        h.innerHTML = '<span>' + h.innerText.split('').join('</span><span>') + '</span>';
+    })
 })

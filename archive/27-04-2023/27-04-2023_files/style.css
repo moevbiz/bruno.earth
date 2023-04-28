@@ -1,0 +1,85 @@
+html {
+    background-color: black;
+}
+
+body {
+    color: white;
+    margin: 0;
+}
+
+.earth {
+    /* display: flex; */
+    display: none;
+    /* justify-content: center;
+    align-items: center; */
+    margin-top: .8em;
+    margin-bottom: .6em;
+    margin-right: .6em;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.earth::after {
+    content: "";
+    border-radius: 6px;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: paleturquoise;
+    filter: drop-shadow(0 0 20px white);
+}
+
+.link_wrapper {
+    display: flex;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: monospace;
+    text-align: left;
+}
+
+.link_wrapper a {
+    background-color: white;
+    /* font-size: min(6vw, 2rem); */
+    color: black;
+    padding-left: 12px;
+    padding-right: 2px;
+    position: relative;
+}
+
+.link_wrapper a::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 10px;
+    left: 0;
+}
+
+.link_wrapper.personal a::before {
+    background-color: greenyellow;
+}
+
+.link_wrapper.project a::before {
+    background-color: brown;
+}
+
+.link_wrapper.biz a::before {
+    background-color: orange;
+}
+
+.link_wrapper.art a::before {
+    background-color: aquamarine;
+}
+
+.link_wrapper.third a::before {
+    background-color: royalblue;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
