@@ -7,18 +7,20 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     padding: 6px;
-    font-size: 14px;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    max-width: 900px;
-}
-
-.indent {
-    text-indent: 1rem;
+h2 {
+    margin: 0;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-top: -1px;
+    font-size: inherit;
+    display: flex;
+    justify-content: space-between;
+    padding: .1rem .2rem;
 }
 
 .links {
