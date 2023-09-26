@@ -7,10 +7,108 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: black;
 }
 
-iframe {
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.el {
+    margin: 0 1rem;
+    padding: 1rem 0;
+}
+
+
+.el:not(:last-of-type) {
+    border-bottom: 1px dotted gray;
+}
+
+.el:first-of-type {
+    padding-top: 0;
+}
+
+.el[id="6"] {
+    width: 100%;
+    transform: translateX(-1rem);
+}
+
+.el[id="6"] iframe {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-30px);
+    filter: invert(1);
+}
+
+.el[id="5"] {
+    margin: 0 1rem;
+}
+
+.el[id="5"] .images {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.el[id="5"] img {
+}
+
+.el[id="4"] .radius {
+    height: 300px;
+    max-width: 600px;
+    background: radial-gradient(closest-side, rgba(230,0,0,1), white, rgba(230,0,0,1), white, rgba(230,0,0,1), white, rgba(230,0,0,1));
+    background: -webkit-radial-gradient(closest-side, rgba(230,0,0,1), white, rgba(230,0,0,1), white, rgba(230,0,0,1), white, rgba(230,0,0,1));
+}
+
+.el[id="3"] .grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+@media (max-width: 600px) {
+    .el[id="3"] .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.el[id="2"] a {
+    max-width: 100vw;
+}
+
+.el[id="2"] .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.el[id="2"] img {
+    max-width: 350px;
+    height: auto;
+}
+
+.el[id="1"] {
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    background-color: black;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.el[id="1"] iframe {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
