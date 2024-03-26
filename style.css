@@ -1,18 +1,39 @@
-html, body {
+/* html, body {
     height: 100%;
+} */
+
+.links {
+    float: left;
+    clear: left;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
-body {
-    display: flex; 
-    grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
-    margin: 0;
+.link {
+    text-decoration: none;
+    color: inherit;
+    max-width: 350px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-iframe {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    pointer-events: none;
+.category {
+    border: 1px solid;
+    margin-bottom: -1px;
+    text-align: center;
+}
+
+.label, .link, .category {
+    padding: .1em .3em;
+}
+
+.link-wrapper {
+    display: flex;
+    border: 1px solid;
+    margin-bottom: -1px;
+}
+
+.link-wrapper .label {
+    border-right: 1px solid;
 }

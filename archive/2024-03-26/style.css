@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex; 
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+}
