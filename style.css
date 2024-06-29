@@ -2,6 +2,33 @@
     height: 100%;
 } */
 
+.announcement {
+    background-color: azure;
+    float: left;
+    clear: left;
+    max-width: 100%;
+    padding: .6em;
+    font-family: sans-serif;
+    font-size: .8rem;
+    line-height: 1.2em;
+    border: 1px solid;
+}
+
+.announcement__label {
+    opacity: .3;
+    margin-bottom: .3em;
+}
+
+.announcement a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.announcement ul {
+    margin: .3em 0;
+    padding-left: 1.5em;
+}
+
 .links {
     float: left;
     clear: left;
