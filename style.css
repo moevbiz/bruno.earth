@@ -2,6 +2,13 @@
     height: 100%;
 } */
 
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
 .announcement {
     background-color: azure;
     float: left;
@@ -32,8 +39,14 @@
 .links {
     float: left;
     clear: left;
+    display: block;
     max-width: 100%;
     margin-bottom: 1rem;
+}
+
+img {
+    float: left;
+    clear: left;
 }
 
 .link {
