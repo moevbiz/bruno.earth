@@ -8,11 +8,10 @@ h1 {
     font-weight: inherit;
     font-style: italic;
     margin-bottom: 1rem;
-    font-size: 1rem;
     margin-top: 0;
     font-family: 'Times New Roman', Times, serif;
-    /* font-weight: bold;
-    letter-spacing: -.02em; */
+    font-weight: bold;
+    letter-spacing: -.02em;
 }
 
 .links {
