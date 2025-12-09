@@ -1,0 +1,59 @@
+html, body {
+    /* font-family: sans-serif; */
+    font-size: .9rem;
+    font-weight: bold;
+    letter-spacing: -.02em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    line-height: 1;
+    margin: 0;
+}
+ 
+h1 {
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.main__text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 600px) {
+    .main__text {
+        flex-direction: row;
+    }
+}
+
+.main__text__element {
+    line-height: 1;
+    display: inline-flex;
+}
+
+.gap {
+    width: 1em;
+}
+
+.main__text__element:not(:last-child)::after {
+    content: ', ';
+    margin-right: .4em;
+}
